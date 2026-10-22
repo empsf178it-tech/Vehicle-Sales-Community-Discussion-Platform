@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REVVOLT — Vehicle Sales Community & Discussion Platform</title>
+  <meta name="description" content="Discover high-performance vehicles for sale, participate in expert-moderated automotive discussions, exchange real ownership insights, and connect with fellow enthusiasts on REVVOLT.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <!-- Left: Logo & Brand -->
+      <a href="index.html" class="brand-link" aria-label="REVVOLT Home">
+        <span class="brand-symbol">R</span>
+        <div class="brand-text">
+          <span class="brand-name">REVVOLT</span>
+          <span class="brand-sub">Enthusiast Network</span>
+        </div>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <nav class="nav-menu-wrap" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="discussions.html" class="nav-link">Discussions</a></li>
+          <li><a href="vehicles.html" class="nav-link">Vehicles</a></li>
+          <li><a href="members.html" class="nav-link">Members</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: System Controls & CTA -->
+      <div class="nav-actions">
+        <div class="nav-pulse-pill" title="Current verified community activity">
+          <span class="pulse-dot"></span>
+          <span>1,420 Active Now</span>
+        </div>
+
+        <button class="btn-icon theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span aria-hidden="true">🌙</span>
+        </button>
+
+        <a href="contact.html#join" class="btn btn-primary btn-sm">Join Community</a>
+
+        <!-- Hamburger Toggle (<= 1024px) -->
+        <button class="nav-toggle" aria-label="Open mobile navigation drawer" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Navigation Drawer (320px) -->
+  <div class="nav-drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-link">
+        <span class="brand-symbol">R</span>
+        <div class="brand-text">
+          <span class="brand-name">REVVOLT</span>
+          <span class="brand-sub">Enthusiast Network</span>
+        </div>
+      </a>
+      <button class="drawer-close-btn btn-icon" aria-label="Close navigation drawer">✕</button>
+    </div>
+
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link active">Home <span>→</span></a></li>
+      <li><a href="discussions.html" class="drawer-link">Discussions <span>→</span></a></li>
+      <li><a href="vehicles.html" class="drawer-link">Vehicles <span>→</span></a></li>
+      <li><a href="members.html" class="drawer-link">Members <span>→</span></a></li>
+      <li><a href="contact.html" class="drawer-link">Contact <span>→</span></a></li>
+    </ul>
+
+    <div class="drawer-footer">
+      <div class="drawer-controls">
+        <button class="btn btn-secondary btn-sm theme-toggle-btn" style="width: 100%;">Toggle Theme</button>
+      </div>
+      <a href="contact.html#join" class="btn btn-primary" style="width: 100%;">Join Community</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         HERO SECTION: PRECISION DRIVE REVEAL
+         ==================================================================== -->
+    <section class="hero-editorial" aria-labelledby="hero-heading">
+      <div class="hero-backdrop-glow" aria-hidden="true"></div>
+
+      <div class="container hero-content-wrapper">
+        <div class="hero-grid">
+          <!-- Left Column: Editorial Headline & Value Proposition -->
+          <div class="hero-copy">
+            <div class="eyebrow hero-eyebrow">
+              <span class="pulse-dot"></span>
+              <span>REVVOLT AUTOMOTIVE NETWORK</span>
+            </div>
+            <h1 id="hero-heading" class="hero-headline">
+              <span class="headline-part line-1">More Than Cars.</span>
+              <span class="headline-part line-2">A Community That</span>
+              <span class="headline-part line-3 highlight-accent">Moves You.</span>
+            </h1>
+            <p class="hero-desc">
+              Discover verified performance vehicles, decode real-world telemetry with automotive master technicians, and join 14,000+ passionate enthusiasts.
+            </p>
+            <div class="hero-ctas">
+              <a href="discussions.html" class="btn btn-primary btn-lg">
+                <span>Explore Discussions</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="vehicles.html" class="btn btn-secondary btn-lg">
+                <span>Discover Vehicles</span>
+                <span class="badge badge-accent" style="font-size: 0.72rem; padding: 0.15rem 0.45rem; margin-inline-start: 0.4rem;">850+</span>
+              </a>
+            </div>
+
+            <!-- Integrated Live Community Signal -->
+            <div class="hero-pulse-strip">
+              <div class="pulse-avatar-group">
+                <img src="assets/images/member_1.jpg" alt="Active enthusiast Elena Vance" class="pulse-avatar" loading="lazy">
+                <img src="assets/images/member_2.jpg" alt="Active enthusiast Marcus Thorne" class="pulse-avatar" loading="lazy">
+                <img src="assets/images/member_3.jpg" alt="Active enthusiast Sarah Miller" class="pulse-avatar" loading="lazy">
+              </div>
+              <div class="hero-pulse-text">
+                <span class="live-dot-beacon"></span>
+                <span class="live-pulse-desc"><strong>1,420 enthusiasts online now</strong> • Live Tech Q&amp;A in GT3 Flat-Six</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Precision Vehicle Telemetry Showcase Console -->
+          <div class="hero-showcase-stage" id="hero-showcase-stage" aria-label="Featured vehicle telemetry stage">
+            <!-- 3D Spatial Grid, Volumetric Halo & Dynamic Floor Shadow -->
+            <div class="showcase-3d-grid" aria-hidden="true"></div>
+            <div class="showcase-ambient-halo" aria-hidden="true"></div>
+            <div class="showcase-floor-shadow" id="showcase-floor-shadow" aria-hidden="true"></div>
+            
+            <!-- 3D Ultra-Luxury Glass Cockpit Showcase Card -->
+            <div class="showcase-console" id="hero-showcase-card">
+              <!-- Specular 3D Reflection Glare Layer -->
+              <div class="console-glare" id="console-glare" aria-hidden="true"></div>
+
+              <!-- Full-Bleed Vehicle Visual Canvas -->
+              <div class="console-viewport">
+                <img 
+                  id="console-car-img"
+                  src="assets/images/5.jpg" 
+                  alt="Porsche 911 GT3 Touring in track-ready stance" 
+                  class="console-car-img"
+                  loading="eager"
+                >
+                <div class="console-vignette" aria-hidden="true"></div>
+
+                <!-- Top Glass Floating Capsule -->
+                <div class="console-top-capsule" aria-label="Showcase Controls">
+                  <div class="capsule-status">
+                    <span class="live-dot-pulse"></span>
+                    <span class="capsule-tag">LIVE TELEMETRY</span>
+                  </div>
+
+                  <!-- Interactive Machine Switcher -->
+                  <div class="capsule-switcher" role="tablist" aria-label="Featured Vehicles">
+                    <button type="button" class="switch-pill active" data-car="gt3" role="tab" aria-selected="true">911 GT3</button>
+                    <button type="button" class="switch-pill" data-car="812" role="tab" aria-selected="false">Ferrari 812</button>
+                  </div>
+
+                  <div class="capsule-verified">
+                    <span class="gold-check">✓</span>
+                    <span>VERIFIED PPI</span>
+                  </div>
+                </div>
+
+                <!-- 3D Layer: Floating Glass Telemetry Dock -->
+                <div class="console-telemetry-dock">
+                  <div class="telemetry-capsule" data-stat="hp">
+                    <div class="capsule-icon-wrap">⚡</div>
+                    <div class="capsule-info">
+                      <span class="capsule-num" id="stat-hp">502 <small>HP</small></span>
+                      <span class="capsule-sub" id="stat-engine">4.0L Boxer NA</span>
+                    </div>
+                  </div>
+
+                  <div class="telemetry-capsule" data-stat="accel">
+                    <div class="capsule-icon-wrap">⏱</div>
+                    <div class="capsule-info">
+                      <span class="capsule-num" id="stat-accel">3.2 <small>SEC</small></span>
+                      <span class="capsule-sub">0-60 Track</span>
+                    </div>
+                  </div>
+
+                  <div class="telemetry-capsule" data-stat="speed">
+                    <div class="capsule-icon-wrap">🏁</div>
+                    <div class="capsule-info">
+                      <span class="capsule-num" id="stat-speed">199 <small>MPH</small></span>
+                      <span class="capsule-sub">Top Velocity</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Docked Quick Vehicle & Community Finder -->
+        <div class="hero-finder-dock" role="search" aria-label="Quick Vehicle Finder">
+          <div class="finder-head">
+            <span class="finder-pulse-icon" aria-hidden="true">⌕</span>
+            <div class="finder-meta">
+              <span class="finder-title">Find your match</span>
+              <span class="finder-desc">850+ curated performance vehicles</span>
+            </div>
+          </div>
+
+          <form action="vehicles.html" method="GET" class="finder-controls-form">
+            <div class="finder-select-group">
+              <label for="finder-make" class="finder-field-label">Make</label>
+              <select id="finder-make" name="make" class="finder-select-input">
+                <option value="all">All Makes</option>
+                <option value="porsche">Porsche</option>
+                <option value="mercedes-benz">Mercedes-Benz</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="aston-martin">Aston Martin</option>
+                <option value="rimac">Rimac</option>
+              </select>
+            </div>
+
+            <div class="finder-select-group">
+              <label for="finder-type" class="finder-field-label">Body Style</label>
+              <select id="finder-type" name="type" class="finder-select-input">
+                <option value="all">All Styles</option>
+                <option value="coupe">Coupe</option>
+                <option value="supercar">Supercar</option>
+                <option value="suv">Performance SUV</option>
+                <option value="convertible">Convertible</option>
+              </select>
+            </div>
+
+            <div class="finder-select-group">
+              <label for="finder-price" class="finder-field-label">Budget</label>
+              <select id="finder-price" name="price" class="finder-select-input">
+                <option value="all">Any Price</option>
+                <option value="under-75k">Under $75,000</option>
+                <option value="75k-150k">$75k – $150,000</option>
+                <option value="over-150k">Over $150,000</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary finder-action-btn">
+              <span>Search Inventory</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Anchoring Stats Ribbon (Dedicated bridging strip) -->
+    <section class="hero-metrics-strip-section" aria-label="REVVOLT Key Platform Statistics">
+      <div class="container">
+        <div class="hero-metrics-bar" role="region">
+          <div class="hero-metric-item">
+            <span class="metric-num">14,800+</span>
+            <span class="metric-text">Verified Enthusiasts</span>
+          </div>
+          <div class="hero-metric-divider" aria-hidden="true"></div>
+          <div class="hero-metric-item">
+            <span class="metric-num">850+</span>
+            <span class="metric-text">Curated Marketplace Listings</span>
+          </div>
+          <div class="hero-metric-divider" aria-hidden="true"></div>
+          <div class="hero-metric-item">
+            <span class="metric-num">3,400+</span>
+            <span class="metric-text">Master Technician Threads</span>
+          </div>
+          <div class="hero-metric-divider" aria-hidden="true"></div>
+          <div class="hero-metric-item">
+            <span class="metric-num">99.2%</span>
+            <span class="metric-text">Verified Ownership Accuracy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HOME SECTION 1: COMMUNITY PULSE (ACTIVITY STREAM)
+         ==================================================================== -->
+    <section class="section-pad" aria-labelledby="pulse-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            LIVE COMMERCE & TELEMETRY
+          </div>
+          <h2 id="pulse-heading">Community Pulse</h2>
+          <p class="lead-text">
+            Real-time feed of verified ownership reviews, technical answers, custom modifications, and automotive sales activity.
+          </p>
+        </div>
+
+        <div class="pulse-feed-container">
+          <div class="pulse-feed-header">
+            <div class="pulse-feed-title">
+              <span class="pulse-dot"></span>
+              <span>Recent Community Events</span>
+            </div>
+            <span class="caption">Simulated demonstration telemetry • Updates automatically</span>
+          </div>
+
+          <div class="pulse-stream">
+            <!-- Event 1: Ownership Review -->
+            <article class="pulse-row">
+              <img src="assets/images/member_1.jpg" alt="Alex Rivera avatar" class="pulse-user-avatar">
+              <div class="pulse-type-icon type-review" title="Ownership Review">📝</div>
+              <div class="pulse-content">
+                <div class="pulse-meta">
+                  <span class="pulse-author">Alex Rivera</span>
+                  <span class="badge badge-lime">Ownership Review</span>
+                  <span class="pulse-time">4 mins ago</span>
+                </div>
+                <div class="pulse-headline">Published: 24,000-mile long-term ownership log on 2022 Porsche 718 Cayman GTS 4.0</div>
+              </div>
+              <img src="assets/images/23.jpg" alt="Porsche Cayman thumbnail" class="pulse-thumb">
+            </article>
+
+            <!-- Event 2: Expert Answer -->
+            <article class="pulse-row">
+              <img src="assets/images/expert_elena_vance.jpg" alt="Elena Vance avatar" class="pulse-user-avatar">
+              <div class="pulse-type-icon type-expert" title="Expert Answer">⚙️</div>
+              <div class="pulse-content">
+                <div class="pulse-meta">
+                  <span class="pulse-author">Elena Vance (Master Diagnostician)</span>
+                  <span class="badge badge-cobalt">Expert Q&A</span>
+                  <span class="pulse-time">18 mins ago</span>
+                </div>
+                <div class="pulse-headline">Answered: “Resolving twin-scroll wastegate rattle without full turbo replacement”</div>
+              </div>
+              <img src="assets/images/3.jpg" alt="Engine workshop thumbnail" class="pulse-thumb">
+            </article>
+
+            <!-- Event 3: Modification Shared -->
+            <article class="pulse-row">
+              <img src="assets/images/member_5.jpg" alt="Jordan Blake avatar" class="pulse-user-avatar">
+              <div class="pulse-type-icon type-mod" title="Mod Build">⚡</div>
+              <div class="pulse-content">
+                <div class="pulse-meta">
+                  <span class="pulse-author">Jordan Blake</span>
+                  <span class="badge badge-coral">Mod Showcase</span>
+                  <span class="pulse-time">42 mins ago</span>
+                </div>
+                <div class="pulse-headline">Uploaded Dyno Graph: Stage 2 ECU re-map with 3-inch high-flow downpipes (+64 lb-ft)</div>
+              </div>
+              <img src="assets/images/12.jpg" alt="Tuned RX-7 thumbnail" class="pulse-thumb">
+            </article>
+
+            <!-- Event 4: Community Milestone -->
+            <article class="pulse-row">
+              <img src="assets/images/member_2.jpg" alt="Sophia Nguyen avatar" class="pulse-user-avatar">
+              <div class="pulse-type-icon type-milestone" title="Milestone">🏆</div>
+              <div class="pulse-content">
+                <div class="pulse-meta">
+                  <span class="pulse-author">Sophia Nguyen</span>
+                  <span class="badge badge-neutral">Milestone</span>
+                  <span class="pulse-time">1 hour ago</span>
+                </div>
+                <div class="pulse-headline">Earned “Technical Contributor” reputation badge with 50+ community-verified helpful replies</div>
+              </div>
+              <img src="assets/images/10.jpg" alt="Enthusiast meet thumbnail" class="pulse-thumb">
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HOME SECTION 2: FIND YOUR NEXT RIDE (4 VEHICLES)
+         ==================================================================== -->
+    <section class="section-pad" style="background-color: var(--bg-surface);" aria-labelledby="vehicles-strip-heading">
+      <div class="container">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              VERIFIED COMMUNITY INVENTORY
+            </div>
+            <h2 id="vehicles-strip-heading">Find Your Next Ride</h2>
+            <p class="lead-text">
+              Curated enthusiast vehicles for sale, complete with community ownership notes and verified inspection histories.
+            </p>
+          </div>
+          <a href="vehicles.html" class="btn btn-secondary">View All Vehicles →</a>
+        </div>
+
+        <div class="vehicles-grid">
+          <!-- Card 1 -->
+          <article class="vehicle-card" data-vehicle-id="veh-5">
+            <div class="vehicle-img-wrap">
+              <img src="assets/images/23.jpg" alt="2022 Porsche 718 Cayman GTS 4.0 in Agate Grey" class="vehicle-img" loading="lazy">
+              <button class="vehicle-save-btn" data-vehicle-id="veh-5" aria-label="Save vehicle">🤍</button>
+              <div class="vehicle-price-tag">$94,800</div>
+            </div>
+            <div class="vehicle-card-body">
+              <h3 class="vehicle-title">2022 Porsche 718 Cayman GTS 4.0</h3>
+              <div class="vehicle-location">📍 Denver, CO • 1 Owner</div>
+              <div class="vehicle-specs-grid">
+                <div class="spec-item"><span class="spec-key">Mileage</span><span class="spec-val-sm">12,600 mi</span></div>
+                <div class="spec-item"><span class="spec-key">Trans</span><span class="spec-val-sm">6-Speed Manual</span></div>
+                <div class="spec-item"><span class="spec-key">Fuel</span><span class="spec-val-sm">Gasoline</span></div>
+                <div class="spec-item"><span class="spec-key">Power</span><span class="spec-val-sm">394 HP</span></div>
+              </div>
+              <div class="vehicle-card-footer">
+                <button class="btn btn-primary view-vehicle-btn" data-vehicle-id="veh-5">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="vehicle-card" data-vehicle-id="veh-2">
+            <div class="vehicle-img-wrap">
+              <img src="assets/images/41.jpg" alt="2022 Mercedes-AMG GT R Coupe" class="vehicle-img" loading="lazy">
+              <button class="vehicle-save-btn" data-vehicle-id="veh-2" aria-label="Save vehicle">🤍</button>
+              <div class="vehicle-price-tag">$132,000</div>
+            </div>
+            <div class="vehicle-card-body">
+              <h3 class="vehicle-title">2022 Mercedes-AMG GT R Coupe</h3>
+              <div class="vehicle-location">📍 Austin, TX • Track Pack</div>
+              <div class="vehicle-specs-grid">
+                <div class="spec-item"><span class="spec-key">Mileage</span><span class="spec-val-sm">11,800 mi</span></div>
+                <div class="spec-item"><span class="spec-key">Trans</span><span class="spec-val-sm">7-Spd Dual-Clutch</span></div>
+                <div class="spec-item"><span class="spec-key">Fuel</span><span class="spec-val-sm">Gasoline</span></div>
+                <div class="spec-item"><span class="spec-key">Power</span><span class="spec-val-sm">577 HP</span></div>
+              </div>
+              <div class="vehicle-card-footer">
+                <button class="btn btn-primary view-vehicle-btn" data-vehicle-id="veh-2">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="vehicle-card" data-vehicle-id="veh-3">
+            <div class="vehicle-img-wrap">
+              <img src="assets/images/33.jpg" alt="2023 BMW M4 Competition xDrive" class="vehicle-img" loading="lazy">
+              <button class="vehicle-save-btn" data-vehicle-id="veh-3" aria-label="Save vehicle">🤍</button>
+              <div class="vehicle-price-tag">$84,500</div>
+            </div>
+            <div class="vehicle-card-body">
+              <h3 class="vehicle-title">2023 BMW M4 Competition xDrive</h3>
+              <div class="vehicle-location">📍 Miami, FL • Clean Title</div>
+              <div class="vehicle-specs-grid">
+                <div class="spec-item"><span class="spec-key">Mileage</span><span class="spec-val-sm">8,900 mi</span></div>
+                <div class="spec-item"><span class="spec-key">Trans</span><span class="spec-val-sm">8-Spd M Steptronic</span></div>
+                <div class="spec-item"><span class="spec-key">Fuel</span><span class="spec-val-sm">Gasoline</span></div>
+                <div class="spec-item"><span class="spec-key">Power</span><span class="spec-val-sm">503 HP</span></div>
+              </div>
+              <div class="vehicle-card-footer">
+                <button class="btn btn-primary view-vehicle-btn" data-vehicle-id="veh-3">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="vehicle-card" data-vehicle-id="veh-4">
+            <div class="vehicle-img-wrap">
+              <img src="assets/images/46.jpg" alt="2021 Audi TT RS Coupe" class="vehicle-img" loading="lazy">
+              <button class="vehicle-save-btn" data-vehicle-id="veh-4" aria-label="Save vehicle">🤍</button>
+              <div class="vehicle-price-tag">$58,900</div>
+            </div>
+            <div class="vehicle-card-body">
+              <h3 class="vehicle-title">2021 Audi TT RS Heritage Edition</h3>
+              <div class="vehicle-location">📍 Seattle, WA • Full Records</div>
+              <div class="vehicle-specs-grid">
+                <div class="spec-item"><span class="spec-key">Mileage</span><span class="spec-val-sm">19,400 mi</span></div>
+                <div class="spec-item"><span class="spec-key">Trans</span><span class="spec-val-sm">7-Spd S Tronic</span></div>
+                <div class="spec-item"><span class="spec-key">Fuel</span><span class="spec-val-sm">Gasoline</span></div>
+                <div class="spec-item"><span class="spec-key">Power</span><span class="spec-val-sm">394 HP</span></div>
+              </div>
+              <div class="vehicle-card-footer">
+                <button class="btn btn-primary view-vehicle-btn" data-vehicle-id="veh-4">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="vehicle-card" data-vehicle-id="veh-7">
+            <div class="vehicle-img-wrap">
+              <img src="assets/images/47.jpg" alt="2024 Aston Martin DB11 Volante" class="vehicle-img" loading="lazy">
+              <button class="vehicle-save-btn" data-vehicle-id="veh-7" aria-label="Save vehicle">🤍</button>
+              <div class="vehicle-price-tag">$179,000</div>
+            </div>
+            <div class="vehicle-card-body">
+              <h3 class="vehicle-title">2024 Aston Martin DB11 Volante</h3>
+              <div class="vehicle-location">📍 Scottsdale, AZ • Handcrafted</div>
+              <div class="vehicle-specs-grid">
+                <div class="spec-item"><span class="spec-key">Mileage</span><span class="spec-val-sm">5,400 mi</span></div>
+                <div class="spec-item"><span class="spec-key">Trans</span><span class="spec-val-sm">8-Spd Auto</span></div>
+                <div class="spec-item"><span class="spec-key">Fuel</span><span class="spec-val-sm">Gasoline</span></div>
+                <div class="spec-item"><span class="spec-key">Power</span><span class="spec-val-sm">528 HP</span></div>
+              </div>
+              <div class="vehicle-card-footer">
+                <button class="btn btn-primary view-vehicle-btn" data-vehicle-id="veh-7">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="vehicle-card" data-vehicle-id="veh-6">
+            <div class="vehicle-img-wrap">
+              <img src="assets/images/30.jpg" alt="2023 Cadillac Escalade Sport Platinum" class="vehicle-img" loading="lazy">
+              <button class="vehicle-save-btn" data-vehicle-id="veh-6" aria-label="Save vehicle">🤍</button>
+              <div class="vehicle-price-tag">$98,500</div>
+            </div>
+            <div class="vehicle-card-body">
+              <h3 class="vehicle-title">2023 Cadillac Escalade Sport Platinum</h3>
+              <div class="vehicle-location">📍 Chicago, IL • Platinum Spec</div>
+              <div class="vehicle-specs-grid">
+                <div class="spec-item"><span class="spec-key">Mileage</span><span class="spec-val-sm">18,300 mi</span></div>
+                <div class="spec-item"><span class="spec-key">Trans</span><span class="spec-val-sm">10-Spd Auto</span></div>
+                <div class="spec-item"><span class="spec-key">Fuel</span><span class="spec-val-sm">Gasoline</span></div>
+                <div class="spec-item"><span class="spec-key">Power</span><span class="spec-val-sm">420 HP</span></div>
+              </div>
+              <div class="vehicle-card-footer">
+                <button class="btn btn-primary view-vehicle-btn" data-vehicle-id="veh-6">View Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HOME SECTION 3: THE GARAGE CONVERSATIONS
+         Editorial Discussion Layout
+         ==================================================================== -->
+    <section class="section-pad" aria-labelledby="garage-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            PASSIONATE ENTHUSIAST DISCOURSE
+          </div>
+          <h2 id="garage-heading">The Garage Conversations</h2>
+          <p class="lead-text">
+            Dive into deep technical debates, transparent buying guides, DIY walkthroughs, and performance tuning logs.
+          </p>
+        </div>
+
+        <div class="garage-editorial">
+          <!-- Featured Editorial Discussion -->
+          <article class="featured-discussion-card">
+            <div class="featured-disc-img-wrap">
+              <img src="assets/images/2.jpg" alt="Automotive enthusiasts gathered around sports cars" class="featured-disc-img" loading="lazy">
+              <div class="featured-badge-overlay">
+                <span class="badge badge-lime">Featured Community Debate</span>
+              </div>
+            </div>
+            <div class="featured-disc-body">
+              <span class="caption">Category: Performance & Modifications</span>
+              <h3 class="featured-disc-title">
+                <a href="discussions.html#featured">Manual vs Dual-Clutch: Is the third pedal dying or becoming the ultimate luxury?</a>
+              </h3>
+              <p class="featured-disc-excerpt">
+                We gathered 34 track day regulars, master technicians, and daily commuters to evaluate shift speed telemetry vs driver engagement on modern mountain passes.
+              </p>
+              <div class="discussion-meta-row">
+                <div class="author-pill">
+                  <img src="assets/images/expert_david_chen.jpg" alt="David Chen avatar" class="author-avatar">
+                  <div class="author-info">
+                    <span class="author-name">David Chen</span>
+                    <span class="author-badge-label">Chassis & Suspension Specialist</span>
+                  </div>
+                </div>
+                <div class="metrics-group">
+                  <span class="metric-item">💬 86 replies</span>
+                  <span class="metric-item">▲ 240 helpful</span>
+                  <span class="metric-item">⏱️ 3h ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Secondary List of Active Discussions -->
+          <div class="discussion-topics-list">
+            <!-- Topic 1 -->
+            <article class="discussion-topic-item">
+              <div class="topic-header-row">
+                <span class="badge badge-cobalt">Buying Advice</span>
+                <span class="caption">12m ago</span>
+              </div>
+              <h4 class="topic-title">
+                <a href="discussions.html">Pre-Purchase Inspection (PPI) checklist for high-mileage German sedans: What dealers won't tell you</a>
+              </h4>
+              <p class="caption">By Liam O'Connor (Trusted Reviewer) • 42 replies • 128 helpful votes</p>
+            </article>
+
+            <!-- Topic 2 -->
+            <article class="discussion-topic-item">
+              <div class="topic-header-row">
+                <span class="badge badge-lime">Electric Vehicles</span>
+                <span class="caption">45m ago</span>
+              </div>
+              <h4 class="topic-title">
+                <a href="discussions.html">Real-world 800V fast-charging degradation after 45,000 miles: telemetry logs & thermal curves</a>
+              </h4>
+              <p class="caption">By Marcus Thorne (EV Architect) • 64 replies • 310 helpful votes</p>
+            </article>
+
+            <!-- Topic 3 -->
+            <article class="discussion-topic-item">
+              <div class="topic-header-row">
+                <span class="badge badge-coral">Maintenance</span>
+                <span class="caption">2h ago</span>
+              </div>
+              <h4 class="topic-title">
+                <a href="discussions.html">Direct injection carbon buildup: Chemical intake spray vs walnut blasting results</a>
+              </h4>
+              <p class="caption">By Elena Vance (Powertrain) • 53 replies • 195 helpful votes</p>
+            </article>
+
+            <!-- Topic 4 -->
+            <article class="discussion-topic-item">
+              <div class="topic-header-row">
+                <span class="badge badge-neutral">First-Time Buyers</span>
+                <span class="caption">3h ago</span>
+              </div>
+              <h4 class="topic-title">
+                <a href="discussions.html">Budget sports car under $30k: BRZ vs Miata ND vs Fiesta ST for daily and canyon runs</a>
+              </h4>
+              <p class="caption">By Sophia Nguyen (Community Mentor) • 97 replies • 142 helpful votes</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HOME SECTION 4: ASK THE EXPERTS (4 PROFILES)
+         ==================================================================== -->
+    <section class="section-pad" style="background-color: var(--bg-surface-elevated);" aria-labelledby="experts-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            VERIFIED INDUSTRY INSIGHT
+          </div>
+          <h2 id="experts-heading">Ask the Experts</h2>
+          <p class="lead-text">
+            Get your technical, maintenance, valuation, and setup questions answered by dedicated automotive engineers. (Demonstration profiles).
+          </p>
+        </div>
+
+        <div class="experts-showcase">
+          <!-- Expert 1 -->
+          <article class="expert-card">
+            <div class="expert-avatar-wrap">
+              <img src="assets/images/expert_elena_vance.jpg" alt="Elena Vance, Master Diagnostician" class="expert-avatar">
+            </div>
+            <h3 class="expert-name">Elena Vance</h3>
+            <div class="expert-spec">Master Diagnostician & Powertrain</div>
+            <p class="expert-intro">
+              15+ years diagnosing forced-induction engines, valvetrain mechanics, and CAN bus sensor network telemetry for European sports cars.
+            </p>
+            <div class="expert-footer">
+              <a href="discussions.html#ask-expert" class="btn btn-outline btn-sm">Ask a Question →</a>
+            </div>
+          </article>
+
+          <!-- Expert 2 -->
+          <article class="expert-card">
+            <div class="expert-avatar-wrap">
+              <img src="assets/images/expert_marcus_thorne.jpg" alt="Marcus Thorne, EV Architect" class="expert-avatar">
+            </div>
+            <h3 class="expert-name">Marcus Thorne</h3>
+            <div class="expert-spec">EV Systems & Battery Architect</div>
+            <p class="expert-intro">
+              Specialist in high-voltage battery degradation modeling, fast-charge thermal cooling cycles, and electric inverter efficiency.
+            </p>
+            <div class="expert-footer">
+              <a href="discussions.html#ask-expert" class="btn btn-outline btn-sm">Ask a Question →</a>
+            </div>
+          </article>
+
+          <!-- Expert 3 -->
+          <article class="expert-card">
+            <div class="expert-avatar-wrap">
+              <img src="assets/images/expert_david_chen.jpg" alt="David Chen, Suspension Specialist" class="expert-avatar">
+            </div>
+            <h3 class="expert-name">David Chen</h3>
+            <div class="expert-spec">Motorsport Suspension & Chassis</div>
+            <p class="expert-intro">
+              Time-attack chassis engineer focused on two-way damper valving, corner balancing, camber kinematics, and track alignment setups.
+            </p>
+            <div class="expert-footer">
+              <a href="discussions.html#ask-expert" class="btn btn-outline btn-sm">Ask a Question →</a>
+            </div>
+          </article>
+
+          <!-- Expert 4 -->
+          <article class="expert-card">
+            <div class="expert-avatar-wrap">
+              <img src="assets/images/expert_sarah_miller.jpg" alt="Sarah Miller, Valuation Appraiser" class="expert-avatar">
+            </div>
+            <h3 class="expert-name">Sarah Miller</h3>
+            <div class="expert-spec">Classic Car Appraiser & PPI Inspector</div>
+            <p class="expert-intro">
+              Specialized in vintage sports car authentication, paint thickness depth analysis, matching numbers audit, and resale value forecasting.
+            </p>
+            <div class="expert-footer">
+              <a href="discussions.html#ask-expert" class="btn btn-outline btn-sm">Ask a Question →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HOME SECTION 5: REPUTATION THAT MEANS SOMETHING
+         Interactive Badge Progression Line
+         ==================================================================== -->
+    <section class="section-pad" aria-labelledby="rep-heading">
+      <div class="container">
+        <div class="section-header center">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            CONTRIBUTION TIERS
+          </div>
+          <h2 id="rep-heading">Reputation That Means Something</h2>
+          <p class="lead-text">
+            On REVVOLT, status is earned through technical rigor, honest ownership documentation, and constructive peer review—never pay-to-play.
+          </p>
+        </div>
+
+        <div class="reputation-track-wrap">
+          <div class="reputation-progress-bar" aria-hidden="true">
+            <div class="reputation-progress-fill"></div>
+          </div>
+
+          <div class="reputation-timeline">
+            <!-- Tier 1 -->
+            <div class="rep-step-card">
+              <div class="rep-step-icon">💬</div>
+              <h3 class="rep-step-title">Helpful First Reply</h3>
+              <div class="rep-step-req">Initial Milestone</div>
+              <p class="rep-step-desc">
+                Awarded when your diagnostic advice or purchasing tip receives 5+ community helpful votes.
+              </p>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="rep-step-card">
+              <div class="rep-step-icon">⭐</div>
+              <h3 class="rep-step-title">Trusted Reviewer</h3>
+              <div class="rep-step-req">25+ Verified Insights</div>
+              <p class="rep-step-desc">
+                Given to owners who submit photographic proof, maintenance receipts, and unbiased long-term reviews.
+              </p>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="rep-step-card active-step">
+              <div class="rep-step-icon">🛠️</div>
+              <h3 class="rep-step-title">Technical Contributor</h3>
+              <div class="rep-step-req">Current Community Peak</div>
+              <p class="rep-step-desc">
+                Unlocks ability to verify member modification guides, review dyno telemetry, and pin technical answers.
+              </p>
+            </div>
+
+            <!-- Tier 4 -->
+            <div class="rep-step-card">
+              <div class="rep-step-icon">👑</div>
+              <h3 class="rep-step-title">Community Mentor</h3>
+              <div class="rep-step-req">Master Tier</div>
+              <p class="rep-step-desc">
+                Guides new buyers, moderates dispute discussions, and leads regional technical workshops.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HOME SECTION 6: HIGH-IMPACT EDITORIAL CTA
+         Near-black background, Lime accent line & Vehicle Detail
+         ==================================================================== -->
+    <section class="container" style="margin-block-end: clamp(4rem, 7vw, 7.5rem);" aria-labelledby="cta-heading">
+      <div class="editorial-cta-dark">
+        <div class="editorial-cta-grid">
+          <div>
+            <div class="cta-lime-line" aria-hidden="true"></div>
+            <h2 id="cta-heading">Your Experience Could Help Someone Find Their Perfect Ride.</h2>
+            <p>
+              Whether you’ve spent five years dialing in suspension geometry or just took delivery of your dream roadster, your real-world insights protect fellow enthusiasts from costly mistakes.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html#join" class="btn btn-lime btn-lg">Join the Community</a>
+              <a href="discussions.html" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: #fff;">Browse Discussions</a>
+            </div>
+          </div>
+          <div class="cta-photo-wrap">
+            <img src="assets/images/39.jpg" alt="Performance sports car wheel and aerodynamic brake duct detail" class="cta-photo" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       ACCESSIBLE VEHICLE QUICK VIEW MODAL
+       ==================================================================== -->
+  <div id="vehicle-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-veh-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close vehicle details">✕</button>
+      <div style="aspect-ratio: 16/9; border-radius: var(--radius-lg); overflow: hidden; margin-block-end: 1.25rem; background: #000;">
+        <img id="modal-veh-img" src="assets/images/5.jpg" alt="Selected vehicle image" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-block-end: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+        <h3 id="modal-veh-title" style="font-size: 1.5rem; font-weight: 560;">Vehicle Title</h3>
+        <span id="modal-veh-price" class="spec-val" style="color: var(--brand-cobalt); font-size: 1.35rem;">$00,000</span>
+      </div>
+      <p class="caption" style="margin-block-end: 1rem;">Verified Enthusiast Listing • Clean Title & Service Inspection Log</p>
+      
+      <h4 style="font-size: 0.95rem; margin-block-end: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Vehicle Telemetry & Specifications</h4>
+      <div id="modal-veh-specs" class="vehicle-specs-grid" style="grid-template-columns: repeat(2, 1fr); margin-block-end: 1.25rem;">
+        <!-- Injected via main.js -->
+      </div>
+
+      <h4 style="font-size: 0.95rem; margin-block-end: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Seller & Community Notes</h4>
+      <p id="modal-veh-notes" style="font-size: 0.92rem; line-height: 1.6; margin-block-end: 1.5rem; color: var(--text-secondary);"></p>
+
+      <div style="display: flex; gap: 0.75rem;">
+        <a href="contact.html?enquiry=purchase" class="btn btn-primary" style="flex: 1;">Inquire to Purchase</a>
+        <a href="discussions.html" class="btn btn-secondary" style="flex: 1;">Read Owner Threads</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-link" style="color: #fff;">
+          <span class="brand-symbol">R</span>
+          <div class="brand-text">
+            <span class="brand-name" style="color: #fff;">REVVOLT</span>
+            <span class="brand-sub" style="color: #94A3B8;">Enthusiast Network</span>
+          </div>
+        </a>
+        <p>
+          The automotive community where passion meets engineering. Transparent listings, real ownership data, and expert-verified advice.
+        </p>
+        <div class="footer-social-links" aria-label="REVVOLT Social Networks">
+          <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on Discord" title="Discord Community">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on X" title="X (Twitter)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on Instagram" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on YouTube" title="YouTube Channel">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <a href="https://reddit.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on Reddit" title="Reddit Subreddit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.703zM9.25 12C8.56 12 8 12.56 8 13.25c0 .688.56 1.25 1.25 1.25.688 0 1.25-.562 1.25-1.25 0-.69-.562-1.25-1.25-1.25zm5.5 0c-.688 0-1.25.56-1.25 1.25 0 .688.562 1.25 1.25 1.25.69 0 1.25-.562 1.25-1.25 0-.69-.56-1.25-1.25-1.25zm-5.465 4.417c-.085.086-.085.226 0 .312.835.836 2.128.98 2.715.98.586 0 1.88-.144 2.715-.98a.22.22 0 0 0 0-.312.22.22 0 0 0-.313 0c-.687.688-1.796.812-2.402.812-.606 0-1.715-.124-2.402-.812a.22.22 0 0 0-.313 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul class="footer-links">
+          <li><a href="discussions.html" class="footer-link">Discussion Threads</a></li>
+          <li><a href="vehicles.html" class="footer-link">Enthusiast Marketplace</a></li>
+          <li><a href="members.html" class="footer-link">Leaderboard & Badges</a></li>
+          <li><a href="contact.html" class="footer-link">Support & Guidelines</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul class="footer-links">
+          <li><a href="discussions.html?cat=buying-advice" class="footer-link">Pre-Purchase Inspections</a></li>
+          <li><a href="discussions.html?cat=maintenance" class="footer-link">DIY Maintenance</a></li>
+          <li><a href="discussions.html?cat=ev" class="footer-link">EV Telemetry</a></li>
+          <li><a href="discussions.html?cat=performance" class="footer-link">Track Day Setups</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Transparency</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html" class="footer-link">Community Support</a></li>
+          <li><a href="vehicles.html#checklist" class="footer-link">Buyer's Checklist</a></li>
+          <li><a href="contact.html" class="footer-link">Enquiry Desk</a></li>
+          <li><a href="members.html#reputation" class="footer-link">Reputation Rules</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© 2026 REVVOLT Platform. All demonstration rights reserved. For preview and evaluation purposes only.</div>
+      <div>Designed with Electric Cobalt, Voltage Lime & Signal Coral.</div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" aria-label="Scroll back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

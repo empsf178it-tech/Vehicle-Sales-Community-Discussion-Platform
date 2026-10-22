@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="revvoltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3155F5"/>
+      <stop offset="100%" stop-color="#1129A8"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded Base Icon -->
+  <rect width="64" height="64" rx="14" fill="url(#revvoltGrad)"/>
+  <!-- Top Electric Lime Accent Bar -->
+  <rect x="0" y="0" width="64" height="5" rx="2" fill="#C8FF3D"/>
+  <!-- Bold Electric 'R' Symbol -->
+  <text x="32" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Space Grotesk', 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="42" fill="#C8FF3D" text-anchor="middle">R</text>
+</svg>

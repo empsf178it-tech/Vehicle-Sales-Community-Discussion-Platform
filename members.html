@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Members & Leaderboard — REVVOLT</title>
+  <meta name="description" content="Meet top automotive contributors, track reputation badges, and explore our community leaderboard on REVVOLT.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <!-- Left: Logo & Brand -->
+      <a href="index.html" class="brand-link" aria-label="REVVOLT Home">
+        <span class="brand-symbol">R</span>
+        <div class="brand-text">
+          <span class="brand-name">REVVOLT</span>
+          <span class="brand-sub">Enthusiast Network</span>
+        </div>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <nav class="nav-menu-wrap" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="discussions.html" class="nav-link">Discussions</a></li>
+          <li><a href="vehicles.html" class="nav-link">Vehicles</a></li>
+          <li><a href="members.html" class="nav-link active" aria-current="page">Members</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: System Controls & CTA -->
+      <div class="nav-actions">
+        <div class="nav-pulse-pill" title="Registered enthusiast members">
+          <span class="pulse-dot"></span>
+          <span>14,890 Members</span>
+        </div>
+
+        <button class="btn-icon theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span aria-hidden="true">🌙</span>
+        </button>
+
+        <a href="contact.html#join" class="btn btn-primary btn-sm">Join Community</a>
+
+        <!-- Hamburger Toggle (<= 1024px) -->
+        <button class="nav-toggle" aria-label="Open mobile navigation drawer" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Navigation Drawer (320px) -->
+  <div class="nav-drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-link">
+        <span class="brand-symbol">R</span>
+        <div class="brand-text">
+          <span class="brand-name">REVVOLT</span>
+          <span class="brand-sub">Enthusiast Network</span>
+        </div>
+      </a>
+      <button class="drawer-close-btn btn-icon" aria-label="Close navigation drawer">✕</button>
+    </div>
+
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home <span>→</span></a></li>
+      <li><a href="discussions.html" class="drawer-link">Discussions <span>→</span></a></li>
+      <li><a href="vehicles.html" class="drawer-link">Vehicles <span>→</span></a></li>
+      <li><a href="members.html" class="drawer-link active">Members <span>→</span></a></li>
+      <li><a href="contact.html" class="drawer-link">Contact <span>→</span></a></li>
+    </ul>
+
+    <div class="drawer-footer">
+      <div class="drawer-controls">
+        <button class="btn btn-secondary btn-sm theme-toggle-btn" style="width: 100%;">Toggle Theme</button>
+      </div>
+      <a href="contact.html#join" class="btn btn-primary" style="width: 100%;">Join Community</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         SECTION 1: MEMBER HERO
+         ==================================================================== -->
+    <section class="section-pad-sm telemetry-grid" style="background-color: var(--bg-surface-elevated);" aria-labelledby="member-hero-heading">
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-copy">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              THE HUMAN HEART OF THE PLATFORM
+            </div>
+            <h1 id="member-hero-heading" class="page-hero-title">
+              Meet the People Behind the Passion.
+            </h1>
+            <p class="lead-text">
+              Track day drivers, master mechanics, classic car restorers, and everyday commuters who test, document, and share their automotive journeys.
+            </p>
+          </div>
+          <div class="page-hero-visual">
+            <img src="assets/images/10.jpg" alt="Automotive enthusiasts examining tuned performance cars together" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: FEATURED CONTRIBUTORS (6 PROFILES)
+         ==================================================================== -->
+    <section class="section-pad" aria-labelledby="contributors-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            PILLARS OF THE COMMUNITY
+          </div>
+          <h2 id="contributors-heading">Featured Contributors</h2>
+          <p class="lead-text">
+            Our most active builders, diagnosticians, and reviewers recognized for verified technical assistance.
+          </p>
+        </div>
+
+        <div class="insights-grid">
+          <!-- Member 1 -->
+          <article class="contact-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 96px; height: 96px; border-radius: var(--radius-pill); overflow: hidden; margin-block-end: 1rem; border: 3px solid var(--brand-cobalt); padding: 2px;">
+              <img src="assets/images/member_1.jpg" alt="Alex Rivera portrait" style="width:100%; height:100%; object-fit: cover; border-radius: var(--radius-pill);">
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 560; margin-block-end: 0.25rem;">Alex Rivera</h3>
+            <span class="badge badge-cobalt" style="margin-block-end: 0.5rem;">Technical Contributor</span>
+            <div class="caption" style="color: var(--brand-cobalt); font-weight: 520; margin-block-end: 0.75rem;">Time Attack Telemetry & Aero</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-block-end: 1.25rem; flex: 1;">
+              Owns a track-prepped 718 Cayman GTS. Active reviewer of high-temp brake fluids, telemetry data loggers, and tire pressure pyrometers.
+            </p>
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding-block-start: 1rem; border-block-start: 1px solid var(--border-subtle);">
+              <span class="caption">⭐ 248 Contributions</span>
+              <a href="discussions.html" class="btn btn-sm btn-outline">View Posts →</a>
+            </div>
+          </article>
+
+          <!-- Member 2 -->
+          <article class="contact-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 96px; height: 96px; border-radius: var(--radius-pill); overflow: hidden; margin-block-end: 1rem; border: 3px solid var(--brand-lime); padding: 2px;">
+              <img src="assets/images/member_2.jpg" alt="Sophia Nguyen portrait" style="width:100%; height:100%; object-fit: cover; border-radius: var(--radius-pill);">
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 560; margin-block-end: 0.25rem;">Sophia Nguyen</h3>
+            <span class="badge badge-lime" style="margin-block-end: 0.5rem;">Community Mentor</span>
+            <div class="caption" style="color: #4a6c00; font-weight: 520; margin-block-end: 0.75rem;">Hot Hatches & DIY Suspension</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-block-end: 1.25rem; flex: 1;">
+              Passionate about accessible grassroots motorsport. Authored 14 detailed guides on corner-balancing and home alignment string methods.
+            </p>
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding-block-start: 1rem; border-block-start: 1px solid var(--border-subtle);">
+              <span class="caption">⭐ 312 Contributions</span>
+              <a href="discussions.html" class="btn btn-sm btn-outline">View Posts →</a>
+            </div>
+          </article>
+
+          <!-- Member 3 -->
+          <article class="contact-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 96px; height: 96px; border-radius: var(--radius-pill); overflow: hidden; margin-block-end: 1rem; border: 3px solid var(--brand-coral); padding: 2px;">
+              <img src="assets/images/member_3.jpg" alt="Liam O'Connor portrait" style="width:100%; height:100%; object-fit: cover; border-radius: var(--radius-pill);">
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 560; margin-block-end: 0.25rem;">Liam O'Connor</h3>
+            <span class="badge badge-coral" style="margin-block-end: 0.5rem;">Trusted Reviewer</span>
+            <div class="caption" style="color: var(--brand-coral); font-weight: 520; margin-block-end: 0.75rem;">Air-Cooled Classics & PPI Audits</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-block-end: 1.25rem; flex: 1;">
+              Vintage 911 restorer. Specializes in borescope cylinder assessments, mechanical fuel injection calibration, and body integrity surveys.
+            </p>
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding-block-start: 1rem; border-block-start: 1px solid var(--border-subtle);">
+              <span class="caption">⭐ 489 Contributions</span>
+              <a href="discussions.html" class="btn btn-sm btn-outline">View Posts →</a>
+            </div>
+          </article>
+
+          <!-- Member 4 -->
+          <article class="contact-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 96px; height: 96px; border-radius: var(--radius-pill); overflow: hidden; margin-block-end: 1rem; border: 3px solid var(--brand-cobalt); padding: 2px;">
+              <img src="assets/images/member_4.jpg" alt="Zainab Al-Mansoor portrait" style="width:100%; height:100%; object-fit: cover; border-radius: var(--radius-pill);">
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 560; margin-block-end: 0.25rem;">Zainab Al-Mansoor</h3>
+            <span class="badge badge-cobalt" style="margin-block-end: 0.5rem;">Technical Contributor</span>
+            <div class="caption" style="color: var(--brand-cobalt); font-weight: 520; margin-block-end: 0.75rem;">Supercar Dynamics & Aero</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-block-end: 1.25rem; flex: 1;">
+              Former aerodynamic modeling engineer. Evaluates high-speed stability, active rear wings, and diffuser ground effect downforce.
+            </p>
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding-block-start: 1rem; border-block-start: 1px solid var(--border-subtle);">
+              <span class="caption">⭐ 195 Contributions</span>
+              <a href="discussions.html" class="btn btn-sm btn-outline">View Posts →</a>
+            </div>
+          </article>
+
+          <!-- Member 5 -->
+          <article class="contact-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 96px; height: 96px; border-radius: var(--radius-pill); overflow: hidden; margin-block-end: 1rem; border: 3px solid var(--brand-lime); padding: 2px;">
+              <img src="assets/images/member_5.jpg" alt="Jordan Blake portrait" style="width:100%; height:100%; object-fit: cover; border-radius: var(--radius-pill);">
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 560; margin-block-end: 0.25rem;">Jordan Blake</h3>
+            <span class="badge badge-lime" style="margin-block-end: 0.5rem;">Helpful First Reply</span>
+            <div class="caption" style="color: #4a6c00; font-weight: 520; margin-block-end: 0.75rem;">Heavy-Duty Overlanding & Towing</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-block-end: 1.25rem; flex: 1;">
+              Tests 4x4 locking differentials, transmission thermal coolers in desert terrain, and payload suspension helper springs.
+            </p>
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding-block-start: 1rem; border-block-start: 1px solid var(--border-subtle);">
+              <span class="caption">⭐ 164 Contributions</span>
+              <a href="discussions.html" class="btn btn-sm btn-outline">View Posts →</a>
+            </div>
+          </article>
+
+          <!-- Member 6 -->
+          <article class="contact-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 96px; height: 96px; border-radius: var(--radius-pill); overflow: hidden; margin-block-end: 1rem; border: 3px solid var(--brand-coral); padding: 2px;">
+              <img src="assets/images/member_6.jpg" alt="Charlotte Weber portrait" style="width:100%; height:100%; object-fit: cover; border-radius: var(--radius-pill);">
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 560; margin-block-end: 0.25rem;">Charlotte Weber</h3>
+            <span class="badge badge-coral" style="margin-block-end: 0.5rem;">Trusted Reviewer</span>
+            <div class="caption" style="color: var(--brand-coral); font-weight: 520; margin-block-end: 0.75rem;">Bavarian M-Power & ECU Tuning</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-block-end: 1.25rem; flex: 1;">
+              ECU calibrator specializing in flex-fuel ethanol maps, charge pipe pressure testing, and anti-lag turbo response curves.
+            </p>
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding-block-start: 1rem; border-block-start: 1px solid var(--border-subtle);">
+              <span class="caption">⭐ 276 Contributions</span>
+              <a href="discussions.html" class="btn btn-sm btn-outline">View Posts →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: REPUTATION SYSTEM EXPLAINED
+         ==================================================================== -->
+    <section id="reputation" class="section-pad" style="background-color: var(--bg-surface-elevated);" aria-labelledby="rep-system-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            HOW IT WORKS
+          </div>
+          <h2 id="rep-system-heading">The Reputation Architecture</h2>
+          <p class="lead-text">
+            Reputation on REVVOLT is a merit-based governance model designed to reward diagnostic accuracy, thoroughness, and courteous community support.
+          </p>
+        </div>
+
+        <div class="insights-grid">
+          <div class="contact-card">
+            <div class="pulse-dot" style="margin-block-end: 1rem;"></div>
+            <h3 style="font-size: 1.2rem; font-weight: 560; margin-block-end: 0.5rem;">Verified Helpful Votes</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+              Every time another member upvotes your answer as the solution to their mechanical or purchasing problem, you earn +10 reputation points.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <div class="pulse-dot" style="background-color: var(--brand-lime); margin-block-end: 1rem;"></div>
+            <h3 style="font-size: 1.2rem; font-weight: 560; margin-block-end: 0.5rem;">Proof-Backed Reviews</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+              Submitting long-term ownership reviews accompanied by actual maintenance invoices, dyno sheets, or alignment printouts grants +50 points.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <div class="pulse-dot" style="background-color: var(--brand-cobalt); margin-block-end: 1rem;"></div>
+            <h3 style="font-size: 1.2rem; font-weight: 560; margin-block-end: 0.5rem;">Community Moderation Rights</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+              Members achieving 1,000+ reputation points receive community moderation privileges, including the ability to pin verified answers and audit listings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: COMMUNITY LEADERBOARD (SORTABLE TABLE)
+         ==================================================================== -->
+    <section class="section-pad" aria-labelledby="leaderboard-heading">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-block-end: 2rem;">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              TOP CONTRIBUTORS
+            </div>
+            <h2 id="leaderboard-heading" style="margin-block-end: 0.5rem;">Community Leaderboard</h2>
+            <p class="lead-text" style="margin-block-start: 0;">
+              Interactive ranking of all-time leading automotive contributors. (Demonstration sample data).
+            </p>
+          </div>
+
+          <!-- Sort Toggles -->
+          <div class="leaderboard-sort-group" role="group" aria-label="Sort leaderboard">
+            <button class="btn btn-sm btn-primary leaderboard-sort-btn" data-sort="points">Sort by Points</button>
+            <button class="btn btn-sm btn-secondary leaderboard-sort-btn" data-sort="contributions">Sort by Posts</button>
+            <button class="btn btn-sm btn-secondary leaderboard-sort-btn" data-sort="badges">Sort by Badges</button>
+          </div>
+        </div>
+
+        <div class="leaderboard-table-wrap">
+          <table class="leaderboard-table" aria-label="Community Contributor Leaderboard">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Member</th>
+                <th scope="col">Reputation Badge</th>
+                <th scope="col">Helpful Votes</th>
+                <th scope="col">Contributions</th>
+                <th scope="col">Total Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr data-points="4890" data-contributions="489" data-badges="6">
+                <td><span class="rank-badge rank-1">1</span></td>
+                <td>
+                  <div class="member-cell">
+                    <img src="assets/images/member_3.jpg" alt="Liam O'Connor avatar">
+                    <div>
+                      <strong>Liam O'Connor</strong>
+                      <div class="caption">Porsche Classic Restorer</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-coral">Trusted Reviewer</span></td>
+                <td>1,240 ▲</td>
+                <td>489</td>
+                <td><strong style="color: var(--brand-cobalt);">4,890 pts</strong></td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr data-points="3420" data-contributions="312" data-badges="5">
+                <td><span class="rank-badge rank-2">2</span></td>
+                <td>
+                  <div class="member-cell">
+                    <img src="assets/images/member_2.jpg" alt="Sophia Nguyen avatar">
+                    <div>
+                      <strong>Sophia Nguyen</strong>
+                      <div class="caption">Grassroots Track Driver</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-lime">Community Mentor</span></td>
+                <td>890 ▲</td>
+                <td>312</td>
+                <td><strong style="color: var(--brand-cobalt);">3,420 pts</strong></td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr data-points="2980" data-contributions="276" data-badges="4">
+                <td><span class="rank-badge rank-3">3</span></td>
+                <td>
+                  <div class="member-cell">
+                    <img src="assets/images/member_6.jpg" alt="Charlotte Weber avatar">
+                    <div>
+                      <strong>Charlotte Weber</strong>
+                      <div class="caption">ECU Calibrator</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-coral">Trusted Reviewer</span></td>
+                <td>760 ▲</td>
+                <td>276</td>
+                <td><strong style="color: var(--brand-cobalt);">2,980 pts</strong></td>
+              </tr>
+
+              <!-- Row 4 -->
+              <tr data-points="2650" data-contributions="248" data-badges="4">
+                <td><span class="rank-badge">4</span></td>
+                <td>
+                  <div class="member-cell">
+                    <img src="assets/images/member_1.jpg" alt="Alex Rivera avatar">
+                    <div>
+                      <strong>Alex Rivera</strong>
+                      <div class="caption">Time Attack Enthusiast</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-cobalt">Technical Contributor</span></td>
+                <td>680 ▲</td>
+                <td>248</td>
+                <td><strong style="color: var(--brand-cobalt);">2,650 pts</strong></td>
+              </tr>
+
+              <!-- Row 5 -->
+              <tr data-points="2100" data-contributions="195" data-badges="3">
+                <td><span class="rank-badge">5</span></td>
+                <td>
+                  <div class="member-cell">
+                    <img src="assets/images/member_4.jpg" alt="Zainab Al-Mansoor avatar">
+                    <div>
+                      <strong>Zainab Al-Mansoor</strong>
+                      <div class="caption">Aero Dynamics Specialist</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-cobalt">Technical Contributor</span></td>
+                <td>520 ▲</td>
+                <td>195</td>
+                <td><strong style="color: var(--brand-cobalt);">2,100 pts</strong></td>
+              </tr>
+
+              <!-- Row 6 -->
+              <tr data-points="1740" data-contributions="164" data-badges="2">
+                <td><span class="rank-badge">6</span></td>
+                <td>
+                  <div class="member-cell">
+                    <img src="assets/images/member_5.jpg" alt="Jordan Blake avatar">
+                    <div>
+                      <strong>Jordan Blake</strong>
+                      <div class="caption">Overlanding Rig Builder</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-lime">Helpful First Reply</span></td>
+                <td>410 ▲</td>
+                <td>164</td>
+                <td><strong style="color: var(--brand-cobalt);">1,740 pts</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5: BRIGHT JOIN CTA
+         ==================================================================== -->
+    <section class="container" style="margin-block-end: clamp(4rem, 7vw, 7.5rem);" aria-labelledby="join-banner-heading">
+      <div style="background: linear-gradient(135deg, var(--brand-cobalt) 0%, #1732be 100%); color: #fff; border-radius: var(--radius-xl); padding: clamp(2.5rem, 5vw, 4.5rem); text-align: center; box-shadow: 0 20px 45px var(--brand-cobalt-glow);">
+        <h2 id="join-banner-heading" style="color: #fff; margin-block-end: 1rem;">Ready to Claim Your Community Garage?</h2>
+        <p style="color: #e2e8f0; font-size: 1.15rem; max-width: 600px; margin-inline: auto; margin-block-end: 2rem;">
+          Create your profile, log your vehicle build specifications, earn reputation badges, and contribute to the most respected automotive community online.
+        </p>
+        <a href="contact.html#join" class="btn btn-lime btn-lg">Join REVVOLT Today</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-link" style="color: #fff;">
+          <span class="brand-symbol">R</span>
+          <div class="brand-text">
+            <span class="brand-name" style="color: #fff;">REVVOLT</span>
+            <span class="brand-sub" style="color: #94A3B8;">Enthusiast Network</span>
+          </div>
+        </a>
+        <p>
+          The automotive community where passion meets engineering. Transparent listings, real ownership data, and expert-verified advice.
+        </p>
+        <div class="footer-social-links" aria-label="REVVOLT Social Networks">
+          <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on Discord" title="Discord Community">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on X" title="X (Twitter)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on Instagram" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on YouTube" title="YouTube Channel">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <a href="https://reddit.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="REVVOLT on Reddit" title="Reddit Subreddit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.703zM9.25 12C8.56 12 8 12.56 8 13.25c0 .688.56 1.25 1.25 1.25.688 0 1.25-.562 1.25-1.25 0-.69-.562-1.25-1.25-1.25zm5.5 0c-.688 0-1.25.56-1.25 1.25 0 .688.562 1.25 1.25 1.25.69 0 1.25-.562 1.25-1.25 0-.69-.56-1.25-1.25-1.25zm-5.465 4.417c-.085.086-.085.226 0 .312.835.836 2.128.98 2.715.98.586 0 1.88-.144 2.715-.98a.22.22 0 0 0 0-.312.22.22 0 0 0-.313 0c-.687.688-1.796.812-2.402.812-.606 0-1.715-.124-2.402-.812a.22.22 0 0 0-.313 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul class="footer-links">
+          <li><a href="discussions.html" class="footer-link">Discussion Threads</a></li>
+          <li><a href="vehicles.html" class="footer-link">Enthusiast Marketplace</a></li>
+          <li><a href="members.html" class="footer-link">Leaderboard & Badges</a></li>
+          <li><a href="contact.html" class="footer-link">Support & Guidelines</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul class="footer-links">
+          <li><a href="discussions.html?cat=buying-advice" class="footer-link">Pre-Purchase Inspections</a></li>
+          <li><a href="discussions.html?cat=maintenance" class="footer-link">DIY Maintenance</a></li>
+          <li><a href="discussions.html?cat=ev" class="footer-link">EV Telemetry</a></li>
+          <li><a href="discussions.html?cat=performance" class="footer-link">Track Day Setups</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Transparency</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html" class="footer-link">Community Support</a></li>
+          <li><a href="vehicles.html#checklist" class="footer-link">Buyer's Checklist</a></li>
+          <li><a href="contact.html" class="footer-link">Enquiry Desk</a></li>
+          <li><a href="members.html#reputation" class="footer-link">Reputation Rules</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© 2026 REVVOLT Platform. All demonstration rights reserved. For preview and evaluation purposes only.</div>
+      <div>Designed with Electric Cobalt, Voltage Lime & Signal Coral.</div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" aria-label="Scroll back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
