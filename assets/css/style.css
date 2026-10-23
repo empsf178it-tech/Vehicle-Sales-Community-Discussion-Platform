@@ -3445,6 +3445,19 @@ button {
   border-radius: var(--radius-xl);
   padding: clamp(1.75rem, 4vw, 3rem);
   box-shadow: var(--card-shadow);
+  box-sizing: border-box;
+}
+
+.contact-desk-card {
+  padding: 1.25rem 1.5rem;
+}
+
+.contact-safety-notice {
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  box-sizing: border-box;
 }
 
 /* Contact Page Social Channels */
@@ -3453,6 +3466,17 @@ button {
   background: var(--bg-surface);
   position: relative;
   overflow: hidden;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.contact-social-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .contact-social-grid {
@@ -3633,6 +3657,16 @@ button {
   grid-template-columns: 1fr 1.65fr;
   gap: 0;
   max-width: 100%;
+}
+
+.maps-sidebar {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-inline-end: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-sizing: border-box;
 }
 
 /* ==========================================================================
@@ -4024,11 +4058,79 @@ button {
   }
 
   .contact-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 1.75rem;
+  }
+
+  .contact-layout > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-card,
+  .contact-desk-card,
+  .contact-social-panel {
+    padding: 1.25rem 1rem !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-social-grid {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .contact-social-item {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0.65rem 0.75rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-social-meta {
+    min-width: 0 !important;
+    flex: 1 1 0% !important;
+    overflow: hidden !important;
+  }
+
+  .contact-social-name {
+    flex-wrap: wrap !important;
+    gap: 0.35rem !important;
+  }
+
+  .contact-social-handle {
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  #contact-form,
+  .form-group,
+  .form-control {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .maps-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) !important;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+
+  .maps-sidebar,
+  .maps-grid > div:first-child {
+    padding: 1.25rem 1rem !important;
+    border-inline-end: none !important;
+    border-block-end: 1px solid var(--border-subtle) !important;
   }
 
   .footer-grid {
@@ -4060,11 +4162,6 @@ button {
   .leaderboard-table-wrap {
     border-radius: var(--radius-lg);
     -webkit-overflow-scrolling: touch;
-  }
-  .maps-grid {
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    overflow: hidden;
   }
 }
 
@@ -4109,6 +4206,7 @@ button {
     -webkit-overflow-scrolling: touch;
   }
 
+  .maps-sidebar,
   .maps-grid > div:first-child {
     border-inline-end: none !important;
     border-block-end: 1px solid var(--border-subtle);
@@ -4130,6 +4228,13 @@ button {
   .vehicle-specs-grid {
     grid-template-columns: 1fr;
   }
+  .back-to-top-btn {
+    inset-block-end: 1rem;
+    inset-inline-end: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 380px) {
@@ -4144,6 +4249,24 @@ button {
   }
   .capsule-info .capsule-num {
     font-size: 0.7rem;
+  }
+  .contact-social-item {
+    padding: 0.55rem 0.6rem !important;
+    gap: 0.55rem !important;
+  }
+  .contact-social-icon-box {
+    width: 36px;
+    height: 36px;
+  }
+  .contact-social-name {
+    font-size: 0.86rem;
+  }
+  .contact-social-badge {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.35rem;
+  }
+  .contact-social-handle {
+    font-size: 0.72rem;
   }
 }
 
